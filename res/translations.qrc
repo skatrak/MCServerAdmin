@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/tr">
+        <file alias="mcserveradmin.es.qm">translations/mcserveradmin.es.qm</file>
+        <file alias="mcserveradmin.de.qm">translations/mcserveradmin.de.qm</file>
+        <file alias="mcserveradmin.fr.qm">translations/mcserveradmin.fr.qm</file>
+        <file alias="mcserveradmin.it.qm">translations/mcserveradmin.it.qm</file>
+        <file alias="mcserveradmin.pt.qm">translations/mcserveradmin.pt.qm</file>
+    </qresource>
+</RCC>
