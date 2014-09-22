@@ -18,14 +18,14 @@ QString SuperflatSettings::getStringRepresentation() const {
   return QString();
 }
 
-void SuperflatSettings::addTopLayer(int element, int height) {
+void SuperflatSettings::addTopLayer(BlockType element, int height) {
   if (layers.empty() || layers.last().first != element)
-    layers.push_back(QPair<int, int>(element, height));
+    layers.push_back(QPair<BlockType, int>(element, height));
   else
     layers.last().second += height;
 }
 
-void SuperflatSettings::addLayer(int position, int element, int height) {
+void SuperflatSettings::addLayer(int position, BlockType element, int height) {
   if (position >= layers.size())
     addTopLayer(element, height);
   else if (position <= 0)
@@ -36,18 +36,18 @@ void SuperflatSettings::addLayer(int position, int element, int height) {
     else if (layers.at(position-1).first == element)
       layers[position-1].second += height;
     else
-      layers.insert(position, QPair<int, int>(element, height));
+      layers.insert(position, QPair<BlockType, int>(element, height));
   }
 }
 
-void SuperflatSettings::addBottomLayer(int element, int height) {
+void SuperflatSettings::addBottomLayer(BlockType element, int height) {
   if (layers.empty() || layers.first().first != element)
-    layers.push_front(QPair<int, int>(element, height));
+    layers.push_front(QPair<BlockType, int>(element, height));
   else
     layers.first().second += height;
 }
 
-void SuperflatSettings::setLayerElement(int layer, int element) {
+void SuperflatSettings::setLayerElement(int layer, BlockType element) {
   if (layer >= 0 && layer < layers.size())
     layers[layer].first = element;
 }
@@ -57,16 +57,16 @@ void SuperflatSettings::setLayerSize(int layer, int size) {
     layers[layer].second = size;
 }
 
-QPair<int, int> SuperflatSettings::getLayerInfo(int layer) const {
+QPair<BlockType, int> SuperflatSettings::getLayerInfo(int layer) const {
   if (layer >= 0 && layer < layers.size())
     return layers.at(layer);
-  else return QPair<int, int>(0, 0);
+  else return QPair<BlockType, int>(INVALIDBLOCKTYPE, 0);
 }
 
-int SuperflatSettings::getLayerElement(int layer) const {
+BlockType SuperflatSettings::getLayerElement(int layer) const {
   if (layer >= 0 && layer < layers.size())
     return layers.at(layer).first;
-  else return 0;
+  else return INVALIDBLOCKTYPE;
 }
 
 int SuperflatSettings::getLayerHeight(int layer) const {
@@ -79,6 +79,6 @@ int SuperflatSettings::getLayerCount() const {
   return layers.size();
 }
 
-QList< QPair<int, int> > SuperflatSettings::getLayers() const {
+QList< QPair<BlockType, int> > SuperflatSettings::getLayers() const {
   return layers;
 }
