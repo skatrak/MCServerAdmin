@@ -22,6 +22,13 @@
 SuperflatSettings::SuperflatSettings(QString text) {
   if (text != "")
     setStringRepresentation(text);
+  else {
+    // by default we have a "classic flat" configuration
+    biome = PLAINS;
+    addTopLayer(BEDROCK, 1);
+    addTopLayer(DIRT, 2);
+    addTopLayer(GRASSBLOCK, 1);
+  }
 }
 
 SuperflatSettings::SuperflatSettings(const SuperflatSettings& other)
@@ -33,8 +40,26 @@ bool SuperflatSettings::setStringRepresentation(QString text) {
 }
 
 QString SuperflatSettings::getStringRepresentation() const {
-  // TODO
-  return QString();
+  QString rep;
+
+  // version
+  rep += "3;";
+
+  // layers
+  for (QList<QPair <BlockType, int> >::const_iterator i = layers.cbegin(); i != layers.cend(); ++i) {
+    if (i->second > 1)
+      rep += QString::number(i->second) + "*";
+    rep += QString::number((int) i->first) + ",";
+  }
+  // substitute the comma for a semicolon
+  rep[rep.length()-1] = ";";
+
+  // biome
+  rep += QString::number((int) biome) + ";";
+
+  // TODO structures
+
+  return rep;
 }
 
 void SuperflatSettings::addTopLayer(BlockType element, int height) {
