@@ -133,6 +133,11 @@ void MapConfig::changeName(QString name) {
   ui->map_name->setText(name);
 }
 
+void MapConfig::changeEvent(QEvent* event) {
+  if (event && event->type() == QEvent::LanguageChange)
+    ui->retranslateUi(this);
+}
+
 void MapConfig::onNameChanged() {
   emit(nameChanged(ui->map_name->text()));
 }

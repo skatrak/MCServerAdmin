@@ -83,6 +83,9 @@ public:
   void setStatusData(QTreeWidgetItem* item, ItemStatus status);
   void deleteData(QTreeWidgetItem* item, DataRole role);
 
+protected:
+  void changeEvent(QEvent* event);
+
 public slots:
   void onContextMenuRequested(QPoint pos);
 

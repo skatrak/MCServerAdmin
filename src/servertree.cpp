@@ -24,6 +24,7 @@
 #include "servertreedelegate.h"
 #include "server.h"
 
+#include <QEvent>
 #include <QFile>
 #include <QMessageBox>
 #include <QMenu>
@@ -316,6 +317,14 @@ void ServerTree::deleteData(QTreeWidgetItem* item, DataRole role) {
       setServerData(item, role, 0);
     }
   }
+}
+
+void ServerTree::changeEvent(QEvent *event) {
+  if (event && event->type() == QEvent::LanguageChange) {
+    headerItem()->setText(0, tr("Name"));
+    headerItem()->setText(1, tr("Status"));
+  }
+  QTreeWidget::changeEvent(event);
 }
 
 void ServerTree::onContextMenuRequested(QPoint pos) {

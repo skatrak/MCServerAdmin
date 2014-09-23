@@ -124,6 +124,11 @@ void ServerConfig::changeName(QString name) {
   ui->server_name->setText(name);
 }
 
+void ServerConfig::changeEvent(QEvent* event) {
+  if (event && event->type() == QEvent::LanguageChange)
+    ui->retranslateUi(this);
+}
+
 void ServerConfig::onNameChanged() {
   emit(nameChanged(ui->server_name->text()));
 }

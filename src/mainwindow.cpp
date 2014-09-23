@@ -40,6 +40,10 @@ MainWindow::MainWindow(QWidget *parent)
   setupActions();
   createLanguageList();
 
+  // We load initially the system's language
+  translator.load(QLocale::system(), ":/tr/mcserveradmin", ".");
+  qApp->installTranslator(&translator);
+
   onDatabaseSaved();
 
   globalEditMenu->addAction(addServerAction);
@@ -73,11 +77,32 @@ MainWindow::~MainWindow (void) {
   delete ui;
 }
 
-void MainWindow::closeEvent(QCloseEvent *event) {
+void MainWindow::closeEvent(QCloseEvent* event) {
   if (promptIfChangesPending())
     event->accept();
   else
     event->ignore();
+}
+
+void MainWindow::changeEvent(QEvent* event) {
+  if (event) {
+    switch(event->type()) {
+    // Translator loaded
+    case QEvent::LanguageChange:
+      ui->retranslateUi(this);
+      retranslate();
+      break;
+    // System language changed
+    case QEvent::LocaleChange:
+    {
+      QString lang = QLocale::system().name();
+      lang.truncate(lang.lastIndexOf('_'));
+      loadLanguage(lang);
+      break;
+    }
+    }
+  }
+  QMainWindow::changeEvent(event);
 }
 
 bool MainWindow::saveDatabase(QString fileName) {
@@ -364,6 +389,11 @@ void MainWindow::renameMapFolder(QString server, QString prev, QString act) {
   dir.rename(prev, act);
 }
 
+void MainWindow::languageChanged(QAction* languageAction) {
+  if (languageAction)
+    loadLanguage(languageAction->data().toString());
+}
+
 void MainWindow::showGlobalEditContextMenu(QPoint pos) {
   globalEditMenu->popup(mapToGlobal(pos));
 }
@@ -516,6 +546,9 @@ void MainWindow::createLanguageList() {
   languagesActions = new QActionGroup(ui->menuLanguage);
   languagesActions->setExclusive(true);
 
+  connect(languagesActions, SIGNAL(triggered(QAction*)),
+          this, SLOT(languageChanged(QAction*)));
+
   // By default the interface is in English, so there's no need for
   // translation files. We add it manually and select it unless there's a more
   // appropriate translation available.
@@ -538,7 +571,6 @@ void MainWindow::createLanguageList() {
   for (int i = 0; i < fileNames.size(); ++i) {
     QLocale loc(fileNames[i]);
 
-    // TODO Manejador de eventos que retraduzca la interfaz
     lang = new QAction(loc.languageToString(loc.language()), this);
     lang->setCheckable(true);
     lang->setData(fileNames[i]);
@@ -555,48 +587,75 @@ void MainWindow::createLanguageList() {
   ui->menuLanguage->addActions(languagesActions->actions());
 }
 
+void MainWindow::loadLanguage(QString language) {
+  if (language != currentLanguage) {
+    currentLanguage = language;
+    //QLocale locale = QLocale(language);
+    //QLocale::setDefault(locale);
+
+    qApp->removeTranslator(&translator);
+    translator.load(QLocale(language), ":/tr/mcserveradmin", ".");
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
+  }
+}
+
 void MainWindow::setupActions() {
-  addServerAction = new QAction(tr("Add server"), this);
+  addServerAction = new QAction(this);
   addServerAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::CTRL + Qt::Key_S));
   connect(addServerAction, SIGNAL(triggered()), this, SLOT(onAddServerTriggered()));
 
-  saveAllAction = new QAction(tr("Save all"), this);
+  saveAllAction = new QAction(this);
   saveAllAction->setShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_S);
   connect(saveAllAction, SIGNAL(triggered()), this, SLOT(onSaveAllTriggered()));
 
-  discardAllAction = new QAction(tr("Discard all"), this);
+  discardAllAction = new QAction(this);
   discardAllAction->setShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_D);
   connect(discardAllAction, SIGNAL(triggered()), this, SLOT(onDiscardAllTriggered()));
 
-  addMapAction = new QAction(tr("Add map"), this);
+  addMapAction = new QAction(this);
   addMapAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::CTRL + Qt::Key_M));
   connect(addMapAction, SIGNAL(triggered()), this, SLOT(onAddMapTriggered()));
 
-  saveServerChangesAction = new QAction(tr("Save changes", "Server changes"), this);
+  saveServerChangesAction = new QAction(this);
   saveServerChangesAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::Key_S));
   connect(saveServerChangesAction, SIGNAL(triggered()), this, SLOT(onSaveServerChangesTriggered()));
 
-  discardServerChangesAction = new QAction(tr("Discard changes", "Server changes"), this);
+  discardServerChangesAction = new QAction(this);
   discardServerChangesAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::Key_D));
   connect(discardServerChangesAction, SIGNAL(triggered()), this, SLOT(onDiscardServerChangesTriggered()));
 
-  removeServerAction = new QAction(tr("Remove server"), this);
+  removeServerAction = new QAction(this);
   removeServerAction->setShortcut(Qt::Key_Delete);
   connect(removeServerAction, SIGNAL(triggered()), this, SLOT(onRemoveServerTriggered()));
 
-  setActiveAction = new QAction(tr("Set active"), this);
+  setActiveAction = new QAction(this);
   setActiveAction->setShortcut(Qt::CTRL + Qt::Key_A);
   connect(setActiveAction, SIGNAL(triggered()), this, SLOT(onSetActiveMapTriggered()));
 
-  saveMapChangesAction = new QAction(tr("Save changes", "Map changes"), this);
+  saveMapChangesAction = new QAction(this);
   saveMapChangesAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::Key_S));
   connect(saveMapChangesAction, SIGNAL(triggered()), this, SLOT(onSaveMapChangesTriggered()));
 
-  discardMapChangesAction = new QAction(tr("Discard changes", "Map changes"), this);
+  discardMapChangesAction = new QAction(this);
   discardMapChangesAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_K, Qt::Key_D));
   connect(discardMapChangesAction, SIGNAL(triggered()), this, SLOT(onDiscardMapChangesTriggered()));
 
-  removeMapAction = new QAction(tr("Remove map"), this);
+  removeMapAction = new QAction(this);
   removeMapAction->setShortcut(Qt::Key_Delete);
   connect(removeMapAction, SIGNAL(triggered()), this, SLOT(onRemoveMapTriggered()));
+}
+
+void MainWindow::retranslate() {
+  addServerAction->setText(tr("Add server"));
+  saveAllAction->setText(tr("Save all"));
+  discardAllAction->setText(tr("Discard all"));
+  addMapAction->setText(tr("Add map"));
+  saveServerChangesAction->setText(tr("Save changes", "Server changes"));
+  discardServerChangesAction->setText(tr("Discard changes", "Server changes"));
+  removeServerAction->setText(tr("Remove server"));
+  setActiveAction->setText(tr("Set active"));
+  saveMapChangesAction->setText(tr("Save changes", "Map changes"));
+  discardMapChangesAction->setText(tr("Discard changes", "Map changes"));
+  removeMapAction->setText(tr("Remove map"));
 }

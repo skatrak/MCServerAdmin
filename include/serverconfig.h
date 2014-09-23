@@ -43,6 +43,9 @@ public:
 public slots:
   void changeName(QString name);
 
+protected:
+  void changeEvent(QEvent* event);
+
 protected slots:
   void onNameChanged();
 

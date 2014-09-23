@@ -44,6 +44,7 @@ public:
 
 protected:
   void closeEvent(QCloseEvent* event);
+  void changeEvent(QEvent* event);
 
 public slots:
   bool saveDatabase(QString fileName);
@@ -79,6 +80,8 @@ protected slots:
   void createNewMapFolder(QString server, QString map);
   void renameMapFolder(QString server, QString prev, QString act);
 
+  void languageChanged(QAction* languageAction);
+
 private slots:
   void showGlobalEditContextMenu(QPoint pos);
   void showCustomEditContextMenu(QPoint pos);
@@ -96,7 +99,9 @@ private slots:
 private:
   bool promptIfChangesPending();
   void createLanguageList();
+  void loadLanguage(QString language);
   void setupActions();
+  void retranslate();
 
   Ui::MainWindow* ui;
   ServerTree* tree;
@@ -124,6 +129,7 @@ private:
 
   QActionGroup* languagesActions;
   QTranslator translator;
+  QString currentLanguage;
 
 };
 
