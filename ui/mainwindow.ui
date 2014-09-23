@@ -96,17 +96,12 @@
     <property name="title">
      <string>Preferences</string>
     </property>
-    <widget class="QMenu" name="menuSelect_language">
+    <widget class="QMenu" name="menuLanguage">
      <property name="title">
       <string>Select language</string>
      </property>
-     <addaction name="actionEnglish"/>
-     <addaction name="actionFrench"/>
-     <addaction name="actionGerman"/>
-     <addaction name="actionItalian"/>
-     <addaction name="actionSpanish"/>
     </widget>
-    <addaction name="menuSelect_language"/>
+    <addaction name="menuLanguage"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>

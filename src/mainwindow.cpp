@@ -510,19 +510,49 @@ bool MainWindow::promptIfChangesPending() {
 }
 
 void MainWindow::createLanguageList() {
-  QDir dir(":/tr");
-  QStringList fileNames = dir.entryList();
+  // We create an exclusive action group to let the user only select one of
+  // the languages at a time. Also this allows us to connect the triggered()
+  // signal of any of the languages actions to the same slot in one sentence.
+  languagesActions = new QActionGroup(ui->menuLanguage);
+  languagesActions->setExclusive(true);
 
+  // By default the interface is in English, so there's no need for
+  // translation files. We add it manually and select it unless there's a more
+  // appropriate translation available.
+  QAction* lang = new QAction("English", this);
+  lang->setCheckable(true);
+  lang->setData("en");
+  lang->setChecked(true);
+  languagesActions->addAction(lang);
+
+  // We find the language we would like to translate the ui to.
+  QString default_name = QLocale::system().name();
+  default_name.truncate(default_name.lastIndexOf('_'));
+
+  // We find the translation files we've got in order to create the languages
+  // list.
+  QStringList fileNames = QDir(":/tr").entryList();
   fileNames.replaceInStrings("mcserveradmin.", "");
   fileNames.replaceInStrings(".qm", "");
 
   for (int i = 0; i < fileNames.size(); ++i) {
     QLocale loc(fileNames[i]);
 
-    // TODO Crear la lista de lenguajes como acciones y que se pueda recuperar el nombre es-ES (p. ej.)
     // TODO Manejador de eventos que retraduzca la interfaz
-    qDebug(loc.languageToString(loc.language()).toStdString().c_str());
+    lang = new QAction(loc.languageToString(loc.language()), this);
+    lang->setCheckable(true);
+    lang->setData(fileNames[i]);
+
+    languagesActions->addAction(lang);
+
+    // If the language found is the one that we wanted, we select it because
+    // this is the language that was loaded by default at startup.
+    if (default_name == fileNames[i])
+        lang->setChecked(true);
   }
+
+  // We add the languages to the languages menu
+  ui->menuLanguage->addActions(languagesActions->actions());
 }
 
 void MainWindow::setupActions() {

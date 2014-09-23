@@ -20,7 +20,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QActionGroup>
 #include <QMainWindow>
+#include <QTranslator>
 
 #include "configwidget.h"
 
@@ -119,6 +121,9 @@ private:
   QAction* saveMapChangesAction;
   QAction* discardMapChangesAction;
   QAction* removeMapAction;
+
+  QActionGroup* languagesActions;
+  QTranslator translator;
 
 };
 
