@@ -52,7 +52,7 @@ QString SuperflatSettings::getStringRepresentation() const {
     rep += QString::number((int) i->first) + ",";
   }
   // substitute the comma for a semicolon
-  rep[rep.length()-1] = ";";
+  rep[rep.length()-1] = ';';
 
   // biome
   rep += QString::number((int) biome) + ";";
