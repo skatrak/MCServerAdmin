@@ -1,3 +1,22 @@
+/*
+ * This file is part of MCServerAdmin.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Copyright (c) 2014 Sergio M. Afonso Fumero <theSkatrak@gmail.com>
+ */
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -426,9 +445,14 @@ void MainWindow::on_action_about_triggered() {
   QMessageBox::about(this, tr("About MCServerAdmin"),
                      tr("<b>MCServerAdmin 0.5</b><br/>"
                         "Copyright 2014 Sergio M. Afonso Fumero. All rights reserved.<br/><br/>"
-                        "This program is provided as is with no warranty of any kind, "
-                        "including the warranty of design, merchantability and fitness"
-                        "for a particular purpose."));
+                        "This program is free software: you can redistribute it and/or modify<br/>"
+                        "it under the terms of the GNU General Public License as published by<br/>"
+                        "the Free Software Foundation, either version 3 of the License, or<br/>"
+                        "(at your option) any later version.<br/><br/>"
+                        "This program is distributed in the hope that it will be useful,<br/>"
+                        "but WITHOUT ANY WARRANTY; without even the implied warranty of<br/>"
+                        "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the<br/>"
+                        "GNU General Public License for more details."));
 }
 
 void MainWindow::on_action_web_page_triggered() {

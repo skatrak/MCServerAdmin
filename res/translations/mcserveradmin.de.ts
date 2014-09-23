@@ -144,216 +144,216 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="68"/>
+        <location filename="../../src/mainwindow.cpp" line="87"/>
         <source>Error saving file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="69"/>
+        <location filename="../../src/mainwindow.cpp" line="88"/>
         <source>Impossible to save database to %1.
 Make sure you have write permissions for that file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="90"/>
+        <location filename="../../src/mainwindow.cpp" line="109"/>
         <source>Error loading file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="91"/>
+        <location filename="../../src/mainwindow.cpp" line="110"/>
         <source>Impossible to load database from %1.
 Make sure you have read permissions for that file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="121"/>
+        <location filename="../../src/mainwindow.cpp" line="140"/>
         <source>Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="139"/>
+        <location filename="../../src/mainwindow.cpp" line="158"/>
         <source>Map</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="193"/>
-        <location filename="../../src/mainwindow.cpp" line="202"/>
+        <location filename="../../src/mainwindow.cpp" line="212"/>
+        <location filename="../../src/mainwindow.cpp" line="221"/>
         <source>Unsaved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="208"/>
+        <location filename="../../src/mainwindow.cpp" line="227"/>
         <source>New server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="230"/>
+        <location filename="../../src/mainwindow.cpp" line="249"/>
         <source>New map</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="244"/>
-        <location filename="../../src/mainwindow.cpp" line="529"/>
+        <location filename="../../src/mainwindow.cpp" line="263"/>
+        <location filename="../../src/mainwindow.cpp" line="553"/>
         <source>Remove server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="245"/>
+        <location filename="../../src/mainwindow.cpp" line="264"/>
         <source>Are you sure you want to remove this server and all its maps?
 This operation cannot be undone.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="277"/>
+        <location filename="../../src/mainwindow.cpp" line="296"/>
         <source>File creation error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="278"/>
+        <location filename="../../src/mainwindow.cpp" line="297"/>
         <source>The file &quot;server.properties&quot; could not be created.
 Make sure you have write permissions in the current folder and in the server folder.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="297"/>
-        <location filename="../../src/mainwindow.cpp" line="545"/>
+        <location filename="../../src/mainwindow.cpp" line="316"/>
+        <location filename="../../src/mainwindow.cpp" line="569"/>
         <source>Remove map</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="298"/>
+        <location filename="../../src/mainwindow.cpp" line="317"/>
         <source>Are you sure you want to remove this map?
 This operation cannot be undone.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="308"/>
+        <location filename="../../src/mainwindow.cpp" line="327"/>
         <source>Directory creation error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="309"/>
+        <location filename="../../src/mainwindow.cpp" line="328"/>
         <source>The folder for the server files could not be created.
 Make sure you have write permissions in the current folder.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="368"/>
+        <location filename="../../src/mainwindow.cpp" line="387"/>
         <source>Open file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="370"/>
-        <location filename="../../src/mainwindow.cpp" line="394"/>
-        <location filename="../../src/mainwindow.cpp" line="402"/>
+        <location filename="../../src/mainwindow.cpp" line="389"/>
+        <location filename="../../src/mainwindow.cpp" line="413"/>
+        <location filename="../../src/mainwindow.cpp" line="421"/>
         <source>MCServerAdmin Database Files (*.mcsadb)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="392"/>
+        <location filename="../../src/mainwindow.cpp" line="411"/>
         <source>Save file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="400"/>
+        <location filename="../../src/mainwindow.cpp" line="419"/>
         <source>Import database</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="413"/>
+        <location filename="../../src/mainwindow.cpp" line="432"/>
         <source>Import server.properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="415"/>
+        <location filename="../../src/mainwindow.cpp" line="434"/>
         <source>server.properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="418"/>
+        <location filename="../../src/mainwindow.cpp" line="437"/>
         <source>Error importing server.properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="419"/>
+        <location filename="../../src/mainwindow.cpp" line="438"/>
         <source>The &quot;server.properties&quot; specified could not be read. Please make sure you have read permissions in the file and the file&apos;s contents are correct.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="426"/>
+        <location filename="../../src/mainwindow.cpp" line="445"/>
         <source>About MCServerAdmin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="427"/>
-        <source>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. All rights reserved.&lt;br/&gt;&lt;br/&gt;This program is provided as is with no warranty of any kind, including the warranty of design, merchantability and fitnessfor a particular purpose.</source>
+        <location filename="../../src/mainwindow.cpp" line="446"/>
+        <source>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. All rights reserved.&lt;br/&gt;&lt;br/&gt;This program is free software: you can redistribute it and/or modify&lt;br/&gt;it under the terms of the GNU General Public License as published by&lt;br/&gt;the Free Software Foundation, either version 3 of the License, or&lt;br/&gt;(at your option) any later version.&lt;br/&gt;&lt;br/&gt;This program is distributed in the hope that it will be useful,&lt;br/&gt;but WITHOUT ANY WARRANTY; without even the implied warranty of&lt;br/&gt;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&lt;br/&gt;GNU General Public License for more details.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="456"/>
+        <location filename="../../src/mainwindow.cpp" line="480"/>
         <source>Unsaved changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="457"/>
+        <location filename="../../src/mainwindow.cpp" line="481"/>
         <source>There are currently changes not saved into the database. Do you want to save them?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="472"/>
+        <location filename="../../src/mainwindow.cpp" line="496"/>
         <source>Unsaved database</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="473"/>
+        <location filename="../../src/mainwindow.cpp" line="497"/>
         <source>The database currently active has unsaved changes. Do you want to save it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="505"/>
+        <location filename="../../src/mainwindow.cpp" line="529"/>
         <source>Add server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="509"/>
+        <location filename="../../src/mainwindow.cpp" line="533"/>
         <source>Save all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="513"/>
+        <location filename="../../src/mainwindow.cpp" line="537"/>
         <source>Discard all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="517"/>
+        <location filename="../../src/mainwindow.cpp" line="541"/>
         <source>Add map</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="521"/>
+        <location filename="../../src/mainwindow.cpp" line="545"/>
         <source>Save changes</source>
         <comment>Server changes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="525"/>
+        <location filename="../../src/mainwindow.cpp" line="549"/>
         <source>Discard changes</source>
         <comment>Server changes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="533"/>
+        <location filename="../../src/mainwindow.cpp" line="557"/>
         <source>Set active</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="537"/>
+        <location filename="../../src/mainwindow.cpp" line="561"/>
         <source>Save changes</source>
         <comment>Map changes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="541"/>
+        <location filename="../../src/mainwindow.cpp" line="565"/>
         <source>Discard changes</source>
         <comment>Map changes</comment>
         <translation type="unfinished"></translation>
@@ -520,62 +520,62 @@ Make sure you have write permissions in the current folder.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../include/map.h" line="33"/>
+        <location filename="../../include/map.h" line="52"/>
         <source>Peaceful</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="34"/>
+        <location filename="../../include/map.h" line="53"/>
         <source>Easy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="35"/>
+        <location filename="../../include/map.h" line="54"/>
         <source>Normal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="36"/>
+        <location filename="../../include/map.h" line="55"/>
         <source>Hard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="40"/>
+        <location filename="../../include/map.h" line="59"/>
         <source>Survival</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="41"/>
+        <location filename="../../include/map.h" line="60"/>
         <source>Creative</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="42"/>
+        <location filename="../../include/map.h" line="61"/>
         <source>Adventure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="43"/>
+        <location filename="../../include/map.h" line="62"/>
         <source>Spectator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="47"/>
+        <location filename="../../include/map.h" line="66"/>
         <source>Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="48"/>
+        <location filename="../../include/map.h" line="67"/>
         <source>Superflat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="49"/>
+        <location filename="../../include/map.h" line="68"/>
         <source>Large biomes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="50"/>
+        <location filename="../../include/map.h" line="69"/>
         <source>Amplified</source>
         <translation type="unfinished"></translation>
     </message>
@@ -714,12 +714,12 @@ Make sure you have write permissions in the current folder.</source>
 <context>
     <name>ServerTree</name>
     <message>
-        <location filename="../../src/servertree.cpp" line="17"/>
+        <location filename="../../src/servertree.cpp" line="36"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/servertree.cpp" line="17"/>
+        <location filename="../../src/servertree.cpp" line="36"/>
         <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
