@@ -24,8 +24,8 @@
 #include <QPair>
 #include <QString>
 
-enum BlockType;
-enum BiomeID;
+enum BlockType: short;
+enum BiomeID: short;
 
 class SuperflatSettings {
 public:
@@ -55,7 +55,7 @@ private:
   // TODO Structure generation options
 };
 
-enum BlockType {
+enum BlockType: short {
   INVALIDBLOCKTYPE = -1,
   AIR,
   STONE,
@@ -257,7 +257,7 @@ enum BlockType {
   DARKOAKDOOR
 };
 
-enum BiomeID {
+enum BiomeID: short {
   INVALIDBIOME = -1,
   OCEAN,
   PLAINS,
