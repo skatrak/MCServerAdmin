@@ -135,31 +135,31 @@ void ServerConfig::onNameChanged() {
 
 void ServerConfig::on_bannedIPsButton_clicked() {
   ui->treeWidget->clear();
-  setHeader({"IP", "Banned by", "Reason"});
+  setHeader({tr("IP"), tr("Banned by"), tr("Reason")});
   loadJsonAttributes("banned-ips.json", {"ip", "source", "reason"});
 }
 
 void ServerConfig::on_bannedPlayersButton_clicked() {
   ui->treeWidget->clear();
-  setHeader({"Player", "Banned by", "Reason"});
+  setHeader({tr("Player"), tr("Banned by"), tr("Reason")});
   loadJsonAttributes("banned-players.json", {"name", "source", "reason"});
 }
 
 void ServerConfig::on_opsButton_clicked() {
   ui->treeWidget->clear();
-  setHeader({"Name", "Permission level"});
+  setHeader({tr("Name"), tr("Permission level")});
   loadJsonAttributes("ops.json", {"name", "level"});
 }
 
 void ServerConfig::on_blacklistButton_clicked() {
   ui->treeWidget->clear();
-  setHeader({"Name"});
+  setHeader({tr("Name")});
   loadJsonAttributes("blacklist.json", {"name"});
 }
 
 void ServerConfig::on_whitelistButton_clicked() {
   ui->treeWidget->clear();
-  setHeader({"Name"});
+  setHeader({tr("Name")});
   loadJsonAttributes("whitelist.json", {"name"});
 }
 
