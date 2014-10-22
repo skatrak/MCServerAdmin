@@ -109,10 +109,15 @@ bool MainWindow::saveDatabase(QString fileName) {
   QFile file(fileName);
 
   if (!file.open(QIODevice::WriteOnly)) {
-    QMessageBox::critical(this, tr("Error saving file"),
-                          tr("Impossible to save database to %1.\n"
-                             "Make sure you have write permissions for that file.").arg(fileName),
-                          QMessageBox::Ok);
+    QMessageBox messageBox(tr("Error saving file"),
+                           tr("Impossible to save database to %1.\n"
+                              "Make sure you have write permissions for that file.").arg(fileName),
+                           QMessageBox::Critical,
+                           QMessageBox::Ok, QMessageBox::NoButton, QMessageBox::NoButton,
+                           this);
+    messageBox.setButtonText(QMessageBox::Ok, tr("Ok"));
+    messageBox.exec();
+
     return false;
   }
 
@@ -131,10 +136,15 @@ bool MainWindow::loadDatabase(QString fileName) {
   QFile file(fileName);
 
   if (!file.open(QIODevice::ReadOnly)) {
-    QMessageBox::critical(this, tr("Error loading file"),
-                          tr("Impossible to load database from %1.\n"
-                             "Make sure you have read permissions for that file.").arg(fileName),
-                          QMessageBox::Ok);
+    QMessageBox messageBox(tr("Error loading file"),
+                           tr("Impossible to load database from %1.\n"
+                              "Make sure you have read permissions for that file.").arg(fileName),
+                           QMessageBox::Critical,
+                           QMessageBox::Ok, QMessageBox::NoButton, QMessageBox::NoButton,
+                           this);
+    messageBox.setButtonText(QMessageBox::Ok, tr("Ok"));
+    messageBox.exec();
+
     return false;
   }
 
@@ -285,11 +295,16 @@ void MainWindow::onDiscardServerChangesTriggered() {
 }
 
 void MainWindow::onRemoveServerTriggered() {
-  int result = QMessageBox::question(this, tr("Remove server"),
-                                    tr("Are you sure you want to remove this server and all its maps?\n"
-                                    "This operation cannot be undone."),
-                                     QMessageBox::Yes, QMessageBox::No);
-  if (result == QMessageBox::Yes)
+  QMessageBox messageBox(tr("Remove server"),
+                         tr("Are you sure you want to remove this server and all its maps?\n"
+                            "This operation cannot be undone."),
+                         QMessageBox::Question,
+                         QMessageBox::Yes, QMessageBox::No, QMessageBox::NoButton,
+                         this);
+  messageBox.setButtonText(QMessageBox::Yes, tr("Yes"));
+  messageBox.setButtonText(QMessageBox::No, tr("No"));
+
+  if (messageBox.exec() == QMessageBox::Yes)
     tree->deleteItem(tree->currentItem());
 }
 
@@ -317,11 +332,16 @@ void MainWindow::onSetActiveMapTriggered() {
     // Marcamos el mapa actual como activo
     tree->setStatusData(item, ActiveStatus);
   }
-  else
-    QMessageBox::critical(this, tr("File creation error"),
-                          tr("The file \"server.properties\" could not be created.\n"
-                          "Make sure you have write permissions in the current folder and in the server folder."),
-                          QMessageBox::Ok);
+  else {
+    QMessageBox messageBox(tr("File creation error"),
+                           tr("The file \"server.properties\" could not be created.\n"
+                              "Make sure you have write permissions in the current folder and in the server folder."),
+                           QMessageBox::Critical,
+                           QMessageBox::Ok, QMessageBox::NoButton, QMessageBox::NoButton,
+                           this);
+    messageBox.setButtonText(QMessageBox::Ok, tr("Ok"));
+    messageBox.exec();
+  }
 }
 
 void MainWindow::onSaveMapChangesTriggered() {
@@ -338,21 +358,30 @@ void MainWindow::onDiscardMapChangesTriggered() {
 }
 
 void MainWindow::onRemoveMapTriggered() {
-  int result = QMessageBox::question(this, tr("Remove map"),
-                                    tr("Are you sure you want to remove this map?\n"
-                                    "This operation cannot be undone."),
-                                     QMessageBox::Yes, QMessageBox::No);
-  if (result == QMessageBox::Yes)
+  QMessageBox messageBox(tr("Remove map"),
+                         tr("Are you sure you want to remove this map?\n"
+                            "This operation cannot be undone."),
+                         QMessageBox::Question,
+                         QMessageBox::Yes, QMessageBox::No, QMessageBox::NoButton,
+                         this);
+  messageBox.setButtonText(QMessageBox::Yes, tr("Yes"));
+  messageBox.setButtonText(QMessageBox::No, tr("No"));
+
+  if (messageBox.exec() == QMessageBox::Yes)
     tree->deleteItem(tree->currentItem());
 }
 
 void MainWindow::createNewServerFolder(QString server) {
   QDir dir;
   if (!dir.mkpath(server)) {
-    QMessageBox::critical(this, tr("Directory creation error"),
-                          tr("The folder for the server files could not be created.\n"
-                          "Make sure you have write permissions in the current folder."),
-                          QMessageBox::Ok);
+    QMessageBox messageBox(tr("Directory creation error"),
+                           tr("The folder for the server files could not be created.\n"
+                              "Make sure you have write permissions in the current folder."),
+                           QMessageBox::Critical,
+                           QMessageBox::Ok, QMessageBox::NoButton, QMessageBox::NoButton,
+                           this);
+    messageBox.setButtonText(QMessageBox::Ok, tr("Ok"));
+    messageBox.exec();
     return;
   }
   else
@@ -463,11 +492,16 @@ void MainWindow::on_action_import_server_properties_triggered() {
                                                   QString(),
                                                   tr("server.properties"));
   if (fileName.length() != 0) {
-    if (!tree->importServerProperties(fileName))
-      QMessageBox::warning(this, tr("Error importing server.properties"),
-                           tr("The \"server.properties\" specified could not be read. Please "
-                              "make sure you have read permissions in the file and the file's "
-                              "contents are correct."), QMessageBox::Ok);
+    if (!tree->importServerProperties(fileName)) {
+      QMessageBox messageBox(tr("Error importing server.properties"),
+                             tr("The \"server.properties\" specified could not be read. Please "
+                                "make sure you have read permissions in the file and the file's "
+                                "contents are correct."), QMessageBox::Warning,
+                             QMessageBox::Ok, QMessageBox::NoButton, QMessageBox::NoButton,
+                             this);
+      messageBox.setButtonText(QMessageBox::Ok, tr("Ok"));
+      messageBox.exec();
+    }
   }
 }
 
@@ -507,10 +541,16 @@ bool MainWindow::promptIfChangesPending() {
   endfor:
 
   if (non_saved_changes) {
-    int result = QMessageBox::question(this, tr("Unsaved changes"),
-                                       tr("There are currently changes not saved into the database. Do you want to save them?"),
-                                       QMessageBox::Yes, QMessageBox::No, QMessageBox::Cancel);
-    switch(result) {
+    QMessageBox messageBox(tr("Unsaved changes"),
+                           tr("There are currently changes not saved into the database. Do you want to save them?"),
+                           QMessageBox::Question,
+                           QMessageBox::Yes, QMessageBox::No, QMessageBox::Cancel,
+                           this);
+    messageBox.setButtonText(QMessageBox::Yes, tr("Yes"));
+    messageBox.setButtonText(QMessageBox::No, tr("No"));
+    messageBox.setButtonText(QMessageBox::Cancel, tr("Cancel"));
+
+    switch(messageBox.exec()) {
     case QMessageBox::Yes:
       onSaveAllTriggered();
       on_action_save_triggered();
@@ -523,10 +563,16 @@ bool MainWindow::promptIfChangesPending() {
   }
 
   if (modifiedDatabase) {
-    int result = QMessageBox::question(this, tr("Unsaved database"),
-                                       tr("The database currently active has unsaved changes. Do you want to save it?"),
-                                       QMessageBox::Yes, QMessageBox::No, QMessageBox::Cancel);
-    switch(result) {
+    QMessageBox messageBox(tr("Unsaved database"),
+                           tr("The database currently active has unsaved changes. Do you want to save it?"),
+                           QMessageBox::Question,
+                           QMessageBox::Yes, QMessageBox::No, QMessageBox::Cancel,
+                           this);
+    messageBox.setButtonText(QMessageBox::Yes, tr("Yes"));
+    messageBox.setButtonText(QMessageBox::No, tr("No"));
+    messageBox.setButtonText(QMessageBox::Cancel, tr("Cancel"));
+
+    switch(messageBox.exec()) {
     case QMessageBox::Yes:
       on_action_save_triggered();
     case QMessageBox::No:
