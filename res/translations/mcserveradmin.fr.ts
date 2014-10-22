@@ -146,217 +146,248 @@
     <message>
         <location filename="../../src/mainwindow.cpp" line="112"/>
         <source>Error saving file</source>
-        <translation>Erreur lors de l'enregistrement du fichier</translation>
+        <translation>Erreur lors de l&apos;enregistrement du fichier</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="113"/>
         <source>Impossible to save database to %1.
 Make sure you have write permissions for that file.</source>
-        <translation>Impossible d'enregistrer la base de données sous %1.
-Assurez-vous de posséder les droits d'écriture sur ce fichier.</translation>
+        <translation>Impossible d&apos;enregistrer la base de données sous %1.
+Assurez-vous de posséder les droits d&apos;écriture sur ce fichier.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="134"/>
+        <location filename="../../src/mainwindow.cpp" line="118"/>
+        <location filename="../../src/mainwindow.cpp" line="145"/>
+        <location filename="../../src/mainwindow.cpp" line="342"/>
+        <location filename="../../src/mainwindow.cpp" line="383"/>
+        <location filename="../../src/mainwindow.cpp" line="502"/>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/mainwindow.cpp" line="139"/>
         <source>Error loading file</source>
         <translation>Erreur de chargement du fichier</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="135"/>
+        <location filename="../../src/mainwindow.cpp" line="140"/>
         <source>Impossible to load database from %1.
 Make sure you have read permissions for that file.</source>
         <translation>Impossible de charger la base de données depuis %1.
 Assurez-vous de posséder les droits de lecture sur ce fichier.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="165"/>
+        <location filename="../../src/mainwindow.cpp" line="175"/>
         <source>Server</source>
         <translation>Serveur</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="183"/>
+        <location filename="../../src/mainwindow.cpp" line="193"/>
         <source>Map</source>
         <translation>Monde</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="237"/>
-        <location filename="../../src/mainwindow.cpp" line="246"/>
+        <location filename="../../src/mainwindow.cpp" line="247"/>
+        <location filename="../../src/mainwindow.cpp" line="256"/>
         <source>Unsaved</source>
         <translation>Modifications non enregistré</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="252"/>
+        <location filename="../../src/mainwindow.cpp" line="262"/>
         <source>New server</source>
         <translation>Nouveau serveur</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="274"/>
+        <location filename="../../src/mainwindow.cpp" line="284"/>
         <source>New map</source>
         <translation>Nouveau monde</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="288"/>
-        <location filename="../../src/mainwindow.cpp" line="656"/>
+        <location filename="../../src/mainwindow.cpp" line="298"/>
+        <location filename="../../src/mainwindow.cpp" line="702"/>
         <source>Remove server</source>
         <translation>Supprimer le serveur</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="289"/>
+        <location filename="../../src/mainwindow.cpp" line="299"/>
         <source>Are you sure you want to remove this server and all its maps?
 This operation cannot be undone.</source>
-        <translation>Êtes-vous sûr de vouloir supprimer ce serveur ainsi que l'ensemble de ses mondes? Cette action est irréversible.</translation>
+        <translation>Êtes-vous sûr de vouloir supprimer ce serveur ainsi que l&apos;ensemble de ses mondes? Cette action est irréversible.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="321"/>
+        <location filename="../../src/mainwindow.cpp" line="304"/>
+        <location filename="../../src/mainwindow.cpp" line="367"/>
+        <location filename="../../src/mainwindow.cpp" line="549"/>
+        <location filename="../../src/mainwindow.cpp" line="571"/>
+        <source>Yes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/mainwindow.cpp" line="305"/>
+        <location filename="../../src/mainwindow.cpp" line="368"/>
+        <location filename="../../src/mainwindow.cpp" line="550"/>
+        <location filename="../../src/mainwindow.cpp" line="572"/>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/mainwindow.cpp" line="336"/>
         <source>File creation error</source>
         <translation>Erreur lors de la création du fichier</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="322"/>
+        <location filename="../../src/mainwindow.cpp" line="337"/>
         <source>The file &quot;server.properties&quot; could not be created.
 Make sure you have write permissions in the current folder and in the server folder.</source>
-        <translation>Le fichier &quot;server.properties&quot; n'a pas pu être créé.
-Assurez-vous de posséder les droits d'écriture dans le répertoire courant et le répertoire du serveur.</translation>
+        <translation>Le fichier &quot;server.properties&quot; n&apos;a pas pu être créé.
+Assurez-vous de posséder les droits d&apos;écriture dans le répertoire courant et le répertoire du serveur.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="341"/>
-        <location filename="../../src/mainwindow.cpp" line="660"/>
+        <location filename="../../src/mainwindow.cpp" line="361"/>
+        <location filename="../../src/mainwindow.cpp" line="706"/>
         <source>Remove map</source>
         <translation>Supprimer le monde</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="342"/>
+        <location filename="../../src/mainwindow.cpp" line="362"/>
         <source>Are you sure you want to remove this map?
 This operation cannot be undone.</source>
         <translation>Êtes-vous sûr de vouloir supprimer ce monde? Cette action est irréversible.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="352"/>
+        <location filename="../../src/mainwindow.cpp" line="377"/>
         <source>Directory creation error</source>
         <translation>Erreur lors de la création du répertoire</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="353"/>
+        <location filename="../../src/mainwindow.cpp" line="378"/>
         <source>The folder for the server files could not be created.
 Make sure you have write permissions in the current folder.</source>
-        <translation>Le répertoire de stockage des fichiers du serveur n'a pas pu être créé. Assurez-vous de posséder les droits d'écriture dans le répertoire courant.</translation>
+        <translation>Le répertoire de stockage des fichiers du serveur n&apos;a pas pu être créé. Assurez-vous de posséder les droits d&apos;écriture dans le répertoire courant.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="417"/>
+        <location filename="../../src/mainwindow.cpp" line="446"/>
         <source>Open file</source>
         <translation>Ouvrir le fichier</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="419"/>
-        <location filename="../../src/mainwindow.cpp" line="443"/>
-        <location filename="../../src/mainwindow.cpp" line="451"/>
+        <location filename="../../src/mainwindow.cpp" line="448"/>
+        <location filename="../../src/mainwindow.cpp" line="472"/>
+        <location filename="../../src/mainwindow.cpp" line="480"/>
         <source>MCServerAdmin Database Files (*.mcsadb)</source>
         <translation>Fichiers Base de données MCServerAdmin (*.mcsadb)</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="441"/>
+        <location filename="../../src/mainwindow.cpp" line="470"/>
         <source>Save file</source>
         <translation>Enregistrer le fichier</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="449"/>
+        <location filename="../../src/mainwindow.cpp" line="478"/>
         <source>Import database</source>
         <translation>Importer la base de données</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="462"/>
+        <location filename="../../src/mainwindow.cpp" line="491"/>
         <source>Import server.properties</source>
         <translation>Importer server.properties</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="464"/>
+        <location filename="../../src/mainwindow.cpp" line="493"/>
         <source>server.properties</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="467"/>
+        <location filename="../../src/mainwindow.cpp" line="496"/>
         <source>Error importing server.properties</source>
-        <translation>Erreur lors de l'import de server.properties</translation>
+        <translation>Erreur lors de l&apos;import de server.properties</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="468"/>
+        <location filename="../../src/mainwindow.cpp" line="497"/>
         <source>The &quot;server.properties&quot; specified could not be read. Please make sure you have read permissions in the file and the file&apos;s contents are correct.</source>
-        <translation>Le fichier &quot;server.properties&quot; n'a pas pu être lu. Assurez-vous de posséder les droits de lecture sur le fichier et que le contenu du fichier est correct.</translation>
+        <translation>Le fichier &quot;server.properties&quot; n&apos;a pas pu être lu. Assurez-vous de posséder les droits de lecture sur le fichier et que le contenu du fichier est correct.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="475"/>
+        <location filename="../../src/mainwindow.cpp" line="509"/>
         <source>About MCServerAdmin</source>
         <translation>À propos de MCServerAdmin</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="476"/>
+        <location filename="../../src/mainwindow.cpp" line="510"/>
         <source>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. All rights reserved.&lt;br/&gt;&lt;br/&gt;This program is free software: you can redistribute it and/or modify&lt;br/&gt;it under the terms of the GNU General Public License as published by&lt;br/&gt;the Free Software Foundation, either version 3 of the License, or&lt;br/&gt;(at your option) any later version.&lt;br/&gt;&lt;br/&gt;This program is distributed in the hope that it will be useful,&lt;br/&gt;but WITHOUT ANY WARRANTY; without even the implied warranty of&lt;br/&gt;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&lt;br/&gt;GNU General Public License for more details.</source>
-        <translation>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. Tous droits réservés.&lt;br/&gt;&lt;br/&gt;Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le modifier selon les termes de la Licence Publique Générale GNU (GNU General Public Licence) telle que publiée par&lt;br/&gt;la Free Software Foundation, soit la version 3 de la License, soit (selon votre choix) une version ultérieure.&lt;br/&gt;&lt;br/&gt;Ce programme est distribué dans l'espoir d'être utile,&lt;br/&gt;mais SANS AUCUNE GARRANTIE, sans même la garrantie implicite de QUALITÉ MARCHANDE ou d'APTITUDE À UN BUT PARTICULIER. Consultez la Licence Publique Générale GNU (GNU General Public License) pour plus de détails.</translation>
+        <translation>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. Tous droits réservés.&lt;br/&gt;&lt;br/&gt;Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le modifier selon les termes de la Licence Publique Générale GNU (GNU General Public Licence) telle que publiée par&lt;br/&gt;la Free Software Foundation, soit la version 3 de la License, soit (selon votre choix) une version ultérieure.&lt;br/&gt;&lt;br/&gt;Ce programme est distribué dans l&apos;espoir d&apos;être utile,&lt;br/&gt;mais SANS AUCUNE GARRANTIE, sans même la garrantie implicite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN BUT PARTICULIER. Consultez la Licence Publique Générale GNU (GNU General Public License) pour plus de détails.</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="510"/>
+        <location filename="../../src/mainwindow.cpp" line="544"/>
         <source>Unsaved changes</source>
         <translation>Modifications non enregistrées</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="511"/>
+        <location filename="../../src/mainwindow.cpp" line="545"/>
         <source>There are currently changes not saved into the database. Do you want to save them?</source>
         <translation>Il y a actuellement des modifications non enregistrées dans la base de données. Voulez-vous les enregistrer?</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="526"/>
+        <location filename="../../src/mainwindow.cpp" line="551"/>
+        <location filename="../../src/mainwindow.cpp" line="573"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/mainwindow.cpp" line="566"/>
         <source>Unsaved database</source>
         <translation>Base de données non enregistrée</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="527"/>
+        <location filename="../../src/mainwindow.cpp" line="567"/>
         <source>The database currently active has unsaved changes. Do you want to save it?</source>
         <translation>La base de données actuelle comporte des modifications non enregistrées. Voulez-vous les enregistrer?</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="650"/>
+        <location filename="../../src/mainwindow.cpp" line="696"/>
         <source>Add server</source>
         <translation>Ajouter un serveur</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="651"/>
+        <location filename="../../src/mainwindow.cpp" line="697"/>
         <source>Save all</source>
         <translation>Tout enregistrer</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="652"/>
+        <location filename="../../src/mainwindow.cpp" line="698"/>
         <source>Discard all</source>
         <translation>Tout annuler</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="653"/>
+        <location filename="../../src/mainwindow.cpp" line="699"/>
         <source>Add map</source>
         <translation>Ajouter un monde</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="654"/>
+        <location filename="../../src/mainwindow.cpp" line="700"/>
         <source>Save changes</source>
         <comment>Server changes</comment>
         <translation>Enregistrer les modifications</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="655"/>
+        <location filename="../../src/mainwindow.cpp" line="701"/>
         <source>Discard changes</source>
         <comment>Server changes</comment>
         <translation>Annuler les modifications</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="657"/>
+        <location filename="../../src/mainwindow.cpp" line="703"/>
         <source>Set active</source>
         <translation>Rendre actif</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="658"/>
+        <location filename="../../src/mainwindow.cpp" line="704"/>
         <source>Save changes</source>
         <comment>Map changes</comment>
         <translation>Enregistrer les modifications</translation>
     </message>
     <message>
-        <location filename="../../src/mainwindow.cpp" line="659"/>
+        <location filename="../../src/mainwindow.cpp" line="705"/>
         <source>Discard changes</source>
         <comment>Map changes</comment>
         <translation>Annuler les modifications</translation>
@@ -432,7 +463,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/mapconfig.ui" line="189"/>
         <source>Player idle timeout</source>
-        <translation>Temps d'inactivité avant expulsion</translation>
+        <translation>Temps d&apos;inactivité avant expulsion</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="206"/>
@@ -442,7 +473,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/mapconfig.ui" line="231"/>
         <source>Allow flight</source>
-        <translation>Activer l'envol</translation>
+        <translation>Activer l&apos;envol</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="238"/>
@@ -497,17 +528,17 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/mapconfig.ui" line="362"/>
         <source>Spawn</source>
-        <translation>Point d'apparition</translation>
+        <translation>Point d&apos;apparition</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="376"/>
         <source>Spawn protection radius</source>
-        <translation>Aire d'effet de la protection de réapparition</translation>
+        <translation>Aire d&apos;effet de la protection de réapparition</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="398"/>
         <source>Spawn animals</source>
-        <translation>Apparition d'animaux</translation>
+        <translation>Apparition d&apos;animaux</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="405"/>
@@ -660,7 +691,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/serverconfig.ui" line="282"/>
         <source>OP permission level</source>
-        <translation>Niveau d'autorisation des OP</translation>
+        <translation>Niveau d&apos;autorisation des OP</translation>
     </message>
     <message>
         <location filename="../../ui/serverconfig.ui" line="301"/>
@@ -712,6 +743,40 @@ Make sure you have write permissions in the current folder.</source>
         <location filename="../../ui/serverconfig.ui" line="404"/>
         <source>View whitelist</source>
         <translation>Voir la liste blanche</translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="138"/>
+        <source>IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="138"/>
+        <location filename="../../src/serverconfig.cpp" line="144"/>
+        <source>Banned by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="138"/>
+        <location filename="../../src/serverconfig.cpp" line="144"/>
+        <source>Reason</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="144"/>
+        <source>Player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="150"/>
+        <location filename="../../src/serverconfig.cpp" line="156"/>
+        <location filename="../../src/serverconfig.cpp" line="162"/>
+        <source>Name</source>
+        <translation type="unfinished">Nom</translation>
+    </message>
+    <message>
+        <location filename="../../src/serverconfig.cpp" line="150"/>
+        <source>Permission level</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
