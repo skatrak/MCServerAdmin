@@ -547,66 +547,63 @@ Make sure you have write permissions in the current folder.</source>
         <source>Spawn NPC&apos;s</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>QObject</name>
     <message>
-        <location filename="../../include/map.h" line="52"/>
+        <location filename="../../src/mapconfig.cpp" line="149"/>
         <source>Peaceful</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="53"/>
+        <location filename="../../src/mapconfig.cpp" line="150"/>
         <source>Easy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="54"/>
+        <location filename="../../src/mapconfig.cpp" line="151"/>
         <source>Normal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="55"/>
+        <location filename="../../src/mapconfig.cpp" line="152"/>
         <source>Hard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="59"/>
+        <location filename="../../src/mapconfig.cpp" line="154"/>
         <source>Survival</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="60"/>
+        <location filename="../../src/mapconfig.cpp" line="155"/>
         <source>Creative</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="61"/>
+        <location filename="../../src/mapconfig.cpp" line="156"/>
         <source>Adventure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="62"/>
+        <location filename="../../src/mapconfig.cpp" line="157"/>
         <source>Spectator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="66"/>
+        <location filename="../../src/mapconfig.cpp" line="159"/>
         <source>Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="67"/>
+        <location filename="../../src/mapconfig.cpp" line="160"/>
         <source>Superflat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="68"/>
+        <location filename="../../src/mapconfig.cpp" line="161"/>
         <source>Large biomes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="69"/>
+        <location filename="../../src/mapconfig.cpp" line="162"/>
         <source>Amplified</source>
         <translation type="unfinished"></translation>
     </message>
@@ -780,14 +777,34 @@ Make sure you have write permissions in the current folder.</source>
     <name>ServerTree</name>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="324"/>
+        <location filename="../../src/servertree.cpp" line="339"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="325"/>
+        <location filename="../../src/servertree.cpp" line="340"/>
         <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="304"/>
+        <source>Saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="307"/>
+        <source>Modified</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="310"/>
+        <source>Active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="313"/>
+        <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

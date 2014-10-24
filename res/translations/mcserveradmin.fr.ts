@@ -220,7 +220,7 @@ This operation cannot be undone.</source>
         <location filename="../../src/mainwindow.cpp" line="549"/>
         <location filename="../../src/mainwindow.cpp" line="571"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oui</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="305"/>
@@ -228,7 +228,7 @@ This operation cannot be undone.</source>
         <location filename="../../src/mainwindow.cpp" line="550"/>
         <location filename="../../src/mainwindow.cpp" line="572"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Non</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="336"/>
@@ -315,7 +315,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../src/mainwindow.cpp" line="510"/>
         <source>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. All rights reserved.&lt;br/&gt;&lt;br/&gt;This program is free software: you can redistribute it and/or modify&lt;br/&gt;it under the terms of the GNU General Public License as published by&lt;br/&gt;the Free Software Foundation, either version 3 of the License, or&lt;br/&gt;(at your option) any later version.&lt;br/&gt;&lt;br/&gt;This program is distributed in the hope that it will be useful,&lt;br/&gt;but WITHOUT ANY WARRANTY; without even the implied warranty of&lt;br/&gt;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&lt;br/&gt;GNU General Public License for more details.</source>
-        <translation>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. Tous droits réservés.&lt;br/&gt;&lt;br/&gt;Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le modifier selon les termes de la Licence Publique Générale GNU (GNU General Public Licence) telle que publiée par&lt;br/&gt;la Free Software Foundation, soit la version 3 de la License, soit (selon votre choix) une version ultérieure.&lt;br/&gt;&lt;br/&gt;Ce programme est distribué dans l&apos;espoir d&apos;être utile,&lt;br/&gt;mais SANS AUCUNE GARRANTIE, sans même la garrantie implicite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN BUT PARTICULIER. Consultez la Licence Publique Générale GNU (GNU General Public License) pour plus de détails.</translation>
+        <translation>&lt;b&gt;MCServerAdmin 0.5&lt;/b&gt;&lt;br/&gt;Copyright 2014 Sergio M. Afonso Fumero. Tous droits réservés.&lt;br/&gt;&lt;br/&gt;Ce programme est un logiciel libre: vous pouvez le redistribuer et/ou le modifier selon les termes de la Licence Publique Générale GNU (GNU General Public Licence) telle que publiée par&lt;br/&gt;la Free Software Foundation, soit la version 3 de la License, soit (selon votre choix) une version ultérieure.&lt;br/&gt;&lt;br/&gt;Ce programme est distribué dans l&apos;espoir d&apos;être utile,&lt;br/&gt;mais SANS AUCUNE GARRANTIE, sans même la garrantie implicite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN BUT PARTICULIER. Consultez la Licence Publique Générale GNU (GNU General Public License) pour plus de détails.</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="544"/>
@@ -550,68 +550,112 @@ Make sure you have write permissions in the current folder.</source>
         <source>Spawn NPC&apos;s</source>
         <translation>Apparition de PNJ</translation>
     </message>
-</context>
-<context>
-    <name>QObject</name>
     <message>
-        <location filename="../../include/map.h" line="52"/>
+        <location filename="../../src/mapconfig.cpp" line="149"/>
         <source>Peaceful</source>
         <translation>Paisible</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="53"/>
+        <location filename="../../src/mapconfig.cpp" line="150"/>
         <source>Easy</source>
         <translation>Facile</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="54"/>
+        <location filename="../../src/mapconfig.cpp" line="151"/>
         <source>Normal</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="55"/>
+        <location filename="../../src/mapconfig.cpp" line="152"/>
         <source>Hard</source>
         <translation>Difficile</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="59"/>
+        <location filename="../../src/mapconfig.cpp" line="154"/>
         <source>Survival</source>
         <translation>Survie</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="60"/>
+        <location filename="../../src/mapconfig.cpp" line="155"/>
         <source>Creative</source>
         <translation>Créatif</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="61"/>
+        <location filename="../../src/mapconfig.cpp" line="156"/>
         <source>Adventure</source>
         <translation>Aventure</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="62"/>
+        <location filename="../../src/mapconfig.cpp" line="157"/>
         <source>Spectator</source>
         <translation>Spectateur</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="66"/>
+        <location filename="../../src/mapconfig.cpp" line="159"/>
         <source>Default</source>
         <translation>Par défaut</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="67"/>
+        <location filename="../../src/mapconfig.cpp" line="160"/>
         <source>Superflat</source>
         <translation>Surface plane</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="68"/>
+        <location filename="../../src/mapconfig.cpp" line="161"/>
         <source>Large biomes</source>
         <translation>Grands biomes</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="69"/>
+        <location filename="../../src/mapconfig.cpp" line="162"/>
         <source>Amplified</source>
         <translation>Amplifié</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Peaceful</source>
+        <translation type="vanished">Paisible</translation>
+    </message>
+    <message>
+        <source>Easy</source>
+        <translation type="vanished">Facile</translation>
+    </message>
+    <message>
+        <source>Hard</source>
+        <translation type="vanished">Difficile</translation>
+    </message>
+    <message>
+        <source>Survival</source>
+        <translation type="vanished">Survie</translation>
+    </message>
+    <message>
+        <source>Creative</source>
+        <translation type="vanished">Créatif</translation>
+    </message>
+    <message>
+        <source>Adventure</source>
+        <translation type="vanished">Aventure</translation>
+    </message>
+    <message>
+        <source>Spectator</source>
+        <translation type="vanished">Spectateur</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="vanished">Par défaut</translation>
+    </message>
+    <message>
+        <source>Superflat</source>
+        <translation type="vanished">Surface plane</translation>
+    </message>
+    <message>
+        <source>Large biomes</source>
+        <translation type="vanished">Grands biomes</translation>
+    </message>
+    <message>
+        <source>Amplified</source>
+        <translation type="vanished">Amplifié</translation>
     </message>
 </context>
 <context>
@@ -783,15 +827,35 @@ Make sure you have write permissions in the current folder.</source>
     <name>ServerTree</name>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="324"/>
+        <location filename="../../src/servertree.cpp" line="339"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="325"/>
+        <location filename="../../src/servertree.cpp" line="340"/>
         <source>Status</source>
         <translation>État</translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="304"/>
+        <source>Saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="307"/>
+        <source>Modified</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="310"/>
+        <source>Active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="313"/>
+        <source>Unknown</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

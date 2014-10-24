@@ -577,68 +577,112 @@ Asegúrate de que tienes permisos de escritura en la carpeta actual.</translatio
         <source>Spawn NPC&apos;s</source>
         <translation>Aparecer NPC&apos;s</translation>
     </message>
-</context>
-<context>
-    <name>QObject</name>
     <message>
-        <location filename="../../include/map.h" line="52"/>
+        <location filename="../../src/mapconfig.cpp" line="149"/>
         <source>Peaceful</source>
         <translation>Pacífico</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="53"/>
+        <location filename="../../src/mapconfig.cpp" line="150"/>
         <source>Easy</source>
         <translation>Fácil</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="54"/>
+        <location filename="../../src/mapconfig.cpp" line="151"/>
         <source>Normal</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="55"/>
+        <location filename="../../src/mapconfig.cpp" line="152"/>
         <source>Hard</source>
         <translation>Difícil</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="59"/>
+        <location filename="../../src/mapconfig.cpp" line="154"/>
         <source>Survival</source>
         <translation>Supervivencia</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="60"/>
+        <location filename="../../src/mapconfig.cpp" line="155"/>
         <source>Creative</source>
         <translation>Creativo</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="61"/>
+        <location filename="../../src/mapconfig.cpp" line="156"/>
         <source>Adventure</source>
         <translation>Aventura</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="62"/>
+        <location filename="../../src/mapconfig.cpp" line="157"/>
         <source>Spectator</source>
         <translation>Espectador</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="66"/>
+        <location filename="../../src/mapconfig.cpp" line="159"/>
         <source>Default</source>
         <translation>Por defecto</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="67"/>
+        <location filename="../../src/mapconfig.cpp" line="160"/>
         <source>Superflat</source>
         <translation>Superplano</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="68"/>
+        <location filename="../../src/mapconfig.cpp" line="161"/>
         <source>Large biomes</source>
         <translation>Grandes ecosistemas</translation>
     </message>
     <message>
-        <location filename="../../include/map.h" line="69"/>
+        <location filename="../../src/mapconfig.cpp" line="162"/>
         <source>Amplified</source>
         <translation>Amplificado</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Peaceful</source>
+        <translation type="vanished">Pacífico</translation>
+    </message>
+    <message>
+        <source>Easy</source>
+        <translation type="vanished">Fácil</translation>
+    </message>
+    <message>
+        <source>Hard</source>
+        <translation type="vanished">Difícil</translation>
+    </message>
+    <message>
+        <source>Survival</source>
+        <translation type="vanished">Supervivencia</translation>
+    </message>
+    <message>
+        <source>Creative</source>
+        <translation type="vanished">Creativo</translation>
+    </message>
+    <message>
+        <source>Adventure</source>
+        <translation type="vanished">Aventura</translation>
+    </message>
+    <message>
+        <source>Spectator</source>
+        <translation type="vanished">Espectador</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="vanished">Por defecto</translation>
+    </message>
+    <message>
+        <source>Superflat</source>
+        <translation type="vanished">Superplano</translation>
+    </message>
+    <message>
+        <source>Large biomes</source>
+        <translation type="vanished">Grandes ecosistemas</translation>
+    </message>
+    <message>
+        <source>Amplified</source>
+        <translation type="vanished">Amplificado</translation>
     </message>
 </context>
 <context>
@@ -810,15 +854,35 @@ Asegúrate de que tienes permisos de escritura en la carpeta actual.</translatio
     <name>ServerTree</name>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="324"/>
+        <location filename="../../src/servertree.cpp" line="339"/>
         <source>Name</source>
         <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="37"/>
-        <location filename="../../src/servertree.cpp" line="325"/>
+        <location filename="../../src/servertree.cpp" line="340"/>
         <source>Status</source>
         <translation>Estado</translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="304"/>
+        <source>Saved</source>
+        <translation>Guardado</translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="307"/>
+        <source>Modified</source>
+        <translation>Modificado</translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="310"/>
+        <source>Active</source>
+        <translation>Activo</translation>
+    </message>
+    <message>
+        <location filename="../../src/servertree.cpp" line="313"/>
+        <source>Unknown</source>
+        <translation>Desconocido</translation>
     </message>
 </context>
 </TS>
