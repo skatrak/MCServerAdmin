@@ -48,26 +48,9 @@ enum LevelType {
   AMPLIFIED
 };
 
-const QMap<QString, GameDifficulty> DIFFICULTY_NAMES = {
-  { "0. " + QObject::tr("Peaceful"), PEACEFUL },
-  { "1. " + QObject::tr("Easy"),     EASY     },
-  { "2. " + QObject::tr("Normal"),   NORMAL   },
-  { "3. " + QObject::tr("Hard"),     HARD     }
-};
-
-const QMap<QString, GameMode> GAME_MODE_NAMES {
-  { "0. " + QObject::tr("Survival"),  SURVIVAL  },
-  { "1. " + QObject::tr("Creative"),  CREATIVE  },
-  { "2. " + QObject::tr("Adventure"), ADVENTURE },
-  { "3. " + QObject::tr("Spectator"), SPECTATOR }
-};
-
-const QMap<QString, LevelType> LEVEL_TYPE_NAMES {
-  { "0. " + QObject::tr("Default"),      DEFAULT      },
-  { "1. " + QObject::tr("Superflat"),    SUPERFLAT    },
-  { "2. " + QObject::tr("Large biomes"), LARGE_BIOMES },
-  { "3. " + QObject::tr("Amplified"),    AMPLIFIED    }
-};
+Q_DECLARE_METATYPE(GameDifficulty)
+Q_DECLARE_METATYPE(GameMode)
+Q_DECLARE_METATYPE(LevelType)
 
 class Map {
 public:

@@ -50,6 +50,9 @@ protected slots:
   void onNameChanged();
 
 private:
+  void translateComboBoxes();
+
+private:
   Ui::MapConfig* ui;
   const Map* map;
 

@@ -42,13 +42,6 @@ enum ItemStatus {
 
 Q_DECLARE_METATYPE(ItemStatus)
 
-static QMap<ItemStatus, QString> ITEM_STATUS_NAMES {
-  { SavedStatus,    "Saved"    },
-  { ModifiedStatus, "Modified" },
-  { ActiveStatus,   "Active"   },
-  { InvalidStatus,  "Unknown"  }
-};
-
 class ServerTree: public QTreeWidget {
   Q_OBJECT
 
@@ -102,6 +95,9 @@ signals:
   void serverRenamed(QString prev, QString act);
   void mapCreated(QString server, QString map);
   void mapRenamed(QString server, QString prev, QString act);
+
+private:
+  void translateStatuses();
 
 };
 

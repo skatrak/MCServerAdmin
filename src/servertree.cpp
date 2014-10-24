@@ -298,7 +298,21 @@ void ServerTree::setStatusData(QTreeWidgetItem* item, ItemStatus status) {
     QVariant var;
     var.setValue(status);
     item->setData(1, Qt::UserRole, var);
-    item->setText(1, ITEM_STATUS_NAMES[status]);
+
+    switch(status) {
+    case SavedStatus:
+      item->setText(1, tr("Saved"));
+      break;
+    case ModifiedStatus:
+      item->setText(1, tr("Modified"));
+      break;
+    case ActiveStatus:
+      item->setText(1, tr("Active"));
+      break;
+    case InvalidStatus:
+      item->setText(1, tr("Unknown"));
+      break;
+    }
   }
 }
 
@@ -321,6 +335,7 @@ void ServerTree::deleteData(QTreeWidgetItem* item, DataRole role) {
 
 void ServerTree::changeEvent(QEvent *event) {
   if (event && event->type() == QEvent::LanguageChange) {
+    translateStatuses();
     headerItem()->setText(0, tr("Name"));
     headerItem()->setText(1, tr("Status"));
   }
@@ -351,6 +366,17 @@ void ServerTree::onItemNameChanged(QTreeWidgetItem* item, int col) {
     if (new_name != item->text(0)) {
       changeItemName(item, new_name);
       emit(itemNameChanged(item->text(0)));
+    }
+  }
+}
+
+void ServerTree::translateStatuses() {
+  for (int i = 0; i < topLevelItemCount(); ++i) {
+    QTreeWidgetItem* itm = topLevelItem(i);
+    setStatusData(itm, extractStatusData(itm));
+    for (int j = 0; j < itm->childCount(); ++j) {
+      QTreeWidgetItem* child = itm->child(j);
+      setStatusData(child, extractStatusData(child));
     }
   }
 }

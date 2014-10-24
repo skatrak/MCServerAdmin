@@ -23,10 +23,7 @@
 MapConfig::MapConfig(const Map* m, QWidget* parent)
   : ConfigWidget(parent), ui(new Ui::MapConfig), map(m) {
   ui->setupUi(this);
-
-  ui->difficulty->addItems(DIFFICULTY_NAMES.keys());
-  ui->gamemode->addItems(GAME_MODE_NAMES.keys());
-  ui->level_type->addItems(LEVEL_TYPE_NAMES.keys());
+  translateComboBoxes();
 
   QRegExp file_rx("[^\\\\/:*?\"<>|]+");
   QRegExp url_rx("((http|ftp|https|sftp)://)?[a-zA-Z0-9._/-]+(:\\d+)?");
@@ -78,13 +75,13 @@ Map MapConfig::getActualConfiguration() const {
 
   m.setAnimalsSpawn(ui->spawn_animals->isChecked());
   m.setCommandBlock(ui->command_block->isChecked());
-  m.setDifficulty(DIFFICULTY_NAMES.value(ui->difficulty->currentText()));
+  m.setDifficulty(ui->difficulty->currentData().value<GameDifficulty>());
   m.setFlightAllowed(ui->allow_flight->isChecked());
-  m.setGameMode(GAME_MODE_NAMES.value(ui->gamemode->currentText()));
+  m.setGameMode(ui->gamemode->currentData().value<GameMode>());
   m.setGameModeForced(ui->force_gamemode->isChecked());
   m.setHardcore(ui->hardcore->isChecked());
   m.setIdleTimeout(ui->idle_timeout->value());
-  m.setLevelType(LEVEL_TYPE_NAMES.value(ui->level_type->currentText()));
+  m.setLevelType(ui->level_type->currentData().value<LevelType>());
   m.setMaxBuildHeight(ui->max_build_height->value());
   m.setMaxPlayers(ui->max_players->value());
   m.setMonstersSpawn(ui->spawn_monsters->isChecked());
@@ -134,10 +131,33 @@ void MapConfig::changeName(QString name) {
 }
 
 void MapConfig::changeEvent(QEvent* event) {
-  if (event && event->type() == QEvent::LanguageChange)
+  if (event && event->type() == QEvent::LanguageChange) {
+    translateComboBoxes();
     ui->retranslateUi(this);
+  }
 }
 
 void MapConfig::onNameChanged() {
   emit(nameChanged(ui->map_name->text()));
+}
+
+void MapConfig::translateComboBoxes() {
+  ui->difficulty->clear();
+  ui->gamemode->clear();
+  ui->level_type->clear();
+
+  ui->difficulty->addItem("0. " + tr("Peaceful"), QVariant::fromValue(PEACEFUL));
+  ui->difficulty->addItem("1. " + tr("Easy"), QVariant::fromValue(EASY));
+  ui->difficulty->addItem("2. " + tr("Normal"), QVariant::fromValue(NORMAL));
+  ui->difficulty->addItem("3. " + tr("Hard"), QVariant::fromValue(HARD));
+
+  ui->gamemode->addItem("0. " + tr("Survival"), QVariant::fromValue(SURVIVAL));
+  ui->gamemode->addItem("1. " + tr("Creative"), QVariant::fromValue(CREATIVE));
+  ui->gamemode->addItem("2. " + tr("Adventure"), QVariant::fromValue(ADVENTURE));
+  ui->gamemode->addItem("3. " + tr("Spectator"), QVariant::fromValue(SPECTATOR));
+
+  ui->level_type->addItem("0. " + tr("Default"), QVariant::fromValue(DEFAULT));
+  ui->level_type->addItem("1. " + tr("Superflat"), QVariant::fromValue(SUPERFLAT));
+  ui->level_type->addItem("2. " + tr("Large biomes"), QVariant::fromValue(LARGE_BIOMES));
+  ui->level_type->addItem("3. " + tr("Amplified"), QVariant::fromValue(AMPLIFIED));
 }
