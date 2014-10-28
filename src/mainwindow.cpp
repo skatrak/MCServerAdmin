@@ -100,6 +100,8 @@ void MainWindow::changeEvent(QEvent* event) {
       loadLanguage(lang);
       break;
     }
+    default:
+      break;
     }
   }
   QMainWindow::changeEvent(event);

@@ -84,7 +84,8 @@ Server ServerConfig::getActualConfiguration() const {
   s.setSnooperEnabled(ui->snooper->isChecked());
   s.setWhiteList(ui->white_list->isChecked());
 
-  quint8 ip[4] = {ui->ip_1->value(), ui->ip_2->value(), ui->ip_3->value(), ui->ip_4->value()};
+  quint8 ip[4] = { (quint8) ui->ip_1->value(), (quint8) ui->ip_2->value(),
+                   (quint8) ui->ip_3->value(), (quint8) ui->ip_4->value() };
   s.setIPAddress(ip);
 
   return s;
