@@ -398,7 +398,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/mapconfig.ui" line="14"/>
         <source>TabWidget</source>
-        <translation type="unfinished">Widget d'onglets</translation>
+        <translation>Widget d'onglets</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="21"/>
@@ -663,7 +663,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/serverconfig.ui" line="14"/>
         <source>ServerConfig</source>
-        <translation type="unfinished">Configuration Serveur</translation>
+        <translation>Configuration Serveur</translation>
     </message>
     <message>
         <location filename="../../ui/serverconfig.ui" line="21"/>
