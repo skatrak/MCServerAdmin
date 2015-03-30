@@ -162,7 +162,7 @@ Assurez-vous de posséder les droits d&apos;écriture sur ce fichier.</translati
         <location filename="../../src/mainwindow.cpp" line="383"/>
         <location filename="../../src/mainwindow.cpp" line="502"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="139"/>
@@ -190,7 +190,7 @@ Assurez-vous de posséder les droits de lecture sur ce fichier.</translation>
         <location filename="../../src/mainwindow.cpp" line="247"/>
         <location filename="../../src/mainwindow.cpp" line="256"/>
         <source>Unsaved</source>
-        <translation>Modifications non enregistré</translation>
+        <translation>Non enregistré</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="262"/>
@@ -220,7 +220,7 @@ This operation cannot be undone.</source>
         <location filename="../../src/mainwindow.cpp" line="549"/>
         <location filename="../../src/mainwindow.cpp" line="571"/>
         <source>Yes</source>
-        <translation type="unfinished">Oui</translation>
+        <translation>Oui</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="305"/>
@@ -228,7 +228,7 @@ This operation cannot be undone.</source>
         <location filename="../../src/mainwindow.cpp" line="550"/>
         <location filename="../../src/mainwindow.cpp" line="572"/>
         <source>No</source>
-        <translation type="unfinished">Non</translation>
+        <translation>Non</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="336"/>
@@ -331,7 +331,7 @@ Make sure you have write permissions in the current folder.</source>
         <location filename="../../src/mainwindow.cpp" line="551"/>
         <location filename="../../src/mainwindow.cpp" line="573"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <location filename="../../src/mainwindow.cpp" line="566"/>
@@ -398,7 +398,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/mapconfig.ui" line="14"/>
         <source>TabWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Widget d'onglets</translation>
     </message>
     <message>
         <location filename="../../ui/mapconfig.ui" line="21"/>
@@ -563,7 +563,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../src/mapconfig.cpp" line="151"/>
         <source>Normal</source>
-        <translation type="unfinished"></translation>
+        <translation>Normal</translation>
     </message>
     <message>
         <location filename="../../src/mapconfig.cpp" line="152"/>
@@ -663,7 +663,7 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../ui/serverconfig.ui" line="14"/>
         <source>ServerConfig</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration Serveur</translation>
     </message>
     <message>
         <location filename="../../ui/serverconfig.ui" line="21"/>
@@ -791,36 +791,36 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../src/serverconfig.cpp" line="138"/>
         <source>IP</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse IP</translation>
     </message>
     <message>
         <location filename="../../src/serverconfig.cpp" line="138"/>
         <location filename="../../src/serverconfig.cpp" line="144"/>
         <source>Banned by</source>
-        <translation type="unfinished"></translation>
+        <translation>Banni par</translation>
     </message>
     <message>
         <location filename="../../src/serverconfig.cpp" line="138"/>
         <location filename="../../src/serverconfig.cpp" line="144"/>
         <source>Reason</source>
-        <translation type="unfinished"></translation>
+        <translation>Motif</translation>
     </message>
     <message>
         <location filename="../../src/serverconfig.cpp" line="144"/>
         <source>Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Joueur</translation>
     </message>
     <message>
         <location filename="../../src/serverconfig.cpp" line="150"/>
         <location filename="../../src/serverconfig.cpp" line="156"/>
         <location filename="../../src/serverconfig.cpp" line="162"/>
         <source>Name</source>
-        <translation type="unfinished">Nom</translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../../src/serverconfig.cpp" line="150"/>
         <source>Permission level</source>
-        <translation type="unfinished"></translation>
+        <translation>Niveau d'autorisation</translation>
     </message>
 </context>
 <context>
@@ -840,22 +840,22 @@ Make sure you have write permissions in the current folder.</source>
     <message>
         <location filename="../../src/servertree.cpp" line="304"/>
         <source>Saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistré</translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="307"/>
         <source>Modified</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifié</translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="310"/>
         <source>Active</source>
-        <translation type="unfinished"></translation>
+        <translation>Actif</translation>
     </message>
     <message>
         <location filename="../../src/servertree.cpp" line="313"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Inconnu</translation>
     </message>
 </context>
 </TS>
